@@ -1,0 +1,41 @@
+.page-footer{
+    background:linear-gradient(rgb(255, 252, 252), rgba(255, 255, 255, 0.952)),url('../../images/123455.jpg');
+    
+}
+.list-unstyled a{
+    color: #B1B5C0;
+}
+.list-unstyled a:hover{
+  text-decoration: none;
+  
+}
+.fc-1{
+    color: #B1B5C0;
+}
+.fc-2 h5{
+    color: #10D0E9;
+}
+.fc-3{
+    color:#B1B5C0;
+}
+.fc-3 h5{
+ color:#10D0E9;
+}
+.fc-4 h5{
+ color: #10D0E9;
+}
+.fc-4 p{
+    color: #B1B5C0;
+}
+.icon{
+    font-size: 20px;
+    border: 1px solid #10D0E9;
+    color: #10D0E9;
+    border-radius: 25px;
+    padding: 10px;
+    margin: 3px;
+}
+.icon:hover{
+    background-color: #10D0E9;
+    color: white;
+}

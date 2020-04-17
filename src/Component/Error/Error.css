@@ -1,0 +1,9 @@
+.err{
+    background:url('../../images/error1.png') no-repeat 0 50%; 
+    
+}
+.err h1{
+    padding-top: 200px;
+    color: red;
+    padding-bottom: 550px;
+}

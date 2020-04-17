@@ -1,0 +1,48 @@
+.dash-list{
+    width: 20%;
+    background-color: #13D0D1;
+    color: white;
+    padding-top: 70px;
+   }
+   
+   .dash-list li{
+       list-style: none;
+       text-align: left;
+       margin-bottom: 10px;
+       margin-top: 10px;
+       margin-left: 10px;
+   }
+   .dash-list li a{
+       text-decoration: none;
+       color: white;
+   }
+   .dash-content{
+    width: 100%;
+    padding-top: 70px;
+   }
+   .booked-body{
+    display: flex;
+    
+    height: 1000px;
+}
+.calender{
+    display: flex;
+    margin-top: 80px;
+}
+.date-picker{
+    border: none;
+    box-shadow: 5px 5px 10px lightgrey;
+    margin: 20px;
+    padding: 10px;
+}
+.table{
+    border: none;
+    box-shadow: 5px 5px 10px lightgrey;
+
+    margin: 30px;
+}
+.tables-head h6{
+    color: #13D0D1;
+    margin-right: 380px;
+    margin-left: 10px;
+}

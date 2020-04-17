@@ -1,0 +1,18 @@
+.app-header{
+    display: flex;
+    background:linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)),url('../../images/Mask Group 1.png') no-repeat 0 50%;
+    background-size: cover;
+    padding-top: 70px;
+}
+.app-calender{
+    width: 100%;
+}
+
+
+.app-img{
+    padding: 20px;
+    margin-right: 139px;
+}
+.app-img img{
+    width: 100%;
+}

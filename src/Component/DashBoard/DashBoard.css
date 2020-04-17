@@ -1,0 +1,50 @@
+.dash-body{
+    display: flex;
+    
+    height: 1000px;
+}
+.dash-list{
+ width: 20%;
+ background-color: #13D0D1;
+ color: white;
+ padding-top: 70px;
+}
+
+.dash-list li{
+    list-style: none;
+    text-align: left;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.dash-list li a{
+    text-decoration: none;
+    color: white;
+}
+.dash-content{
+ width: 100%;
+ padding-top: 70px;
+}
+.cd-body{
+    display: flex;
+}
+.number{
+    margin-right: 20px;
+}
+.component{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    text-align: left;
+}
+.week-btn{
+    margin-left: 800px;
+    border: 1px solid lightgrey;
+    padding: 5px;
+
+}
+.select{
+    border: none;
+}
+.table-head h6{
+    color: #13D0D1;
+}

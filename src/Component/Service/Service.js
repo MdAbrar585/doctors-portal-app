@@ -10,8 +10,11 @@ import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogTitle from '@material-ui/core/DialogTitle';
 import { getDatabaseCart } from '../../utilities/databaseManager';
 import { useForm } from 'react-hook-form';
+import TimePicker from 'react-dropdown-timepicker';
+import {Dropdown} from 'primereact/dropdown';
 
 const Service = (props) => {
+    console.log(props);
     const { register, handleSubmit, errors } = useForm();
 
     const [open, setOpen] = React.useState(false);
@@ -31,8 +34,8 @@ const Service = (props) => {
 
     const onSubmit = data => {
         // const sendData =  getDatabaseCart();
-        const information = {Info:data};
-        fetch('http://localhost:4200/placeInformation', {
+        const information = data;
+        fetch('https://doctors-portal588.herokuapp.com/placeInformation', {
             method: 'POST', // *GET, POST, PUT, DELETE, etc.
             headers: {
                 'Content-Type': 'application/json'
@@ -64,10 +67,10 @@ const Service = (props) => {
                         <p> <small>{space}</small></p>
                         <button onClick={handleClickOpen} className="btn btn-info">Book Appointment</button>
                         <Dialog open={open} onClose={handleClose} aria-labelledby="form-dialog-title">
-                            <DialogTitle id="form-dialog-title">{name}</DialogTitle>
+                            <DialogTitle className="title" id="form-dialog-title">{name}</DialogTitle>
                             <DialogContent>
                                 <form className="shipping-form" onClick={handleSubmit(onSubmit)} >
-                                    <DatePicker
+                                    {/* <DatePicker
                                         selected={startDate}
                                         onChange={date => setStartDate(date)}
                                         showTimeSelect
@@ -75,31 +78,36 @@ const Service = (props) => {
                                         timeIntervals={15}
                                         timeCaption="Time"
                                         dateFormat="h:mm aa"
-                                    />
+                                    /> */}
+
+                                    {/* <Dropdown option={time } placeholder="select"/> */}
+                                     <input defaultValue={time} name="time"  ref={register({ required: true })}/>
+                                    {errors.time && <span>Name field is required</span>}
+
                                     <input name="name"  ref={register({ required: true })} placeholder="Your Name" />
                                     {errors.name && <span>Name field is required</span>}
 
                                     <input name="phoneNumber" ref={register({ required: true })} placeholder="Phone Number" />
-                                    {errors.phoneNumber && <span>Address field is required</span>}
+                                    {errors.phoneNumber && <span>Phone Number field is required</span>}
 
                                     <input name="email" ref={register({ required: true })} placeholder="Email" />
                                     {errors.email && <span>Email field is required</span>}
 
                                    
 
-                                    <input defaultValue={props.startDate} name="date" ref={register({ required: true })} placeholder="Date" />
-                                    {errors.datedatedate && <span>City field is required</span>}
+                                    <input defaultValue={props.startDate.toLocaleString('default',{month:'long'}) +' '+ props.startDate.getDate() +' '+ props.startDate.getFullYear()} name="date" ref={register({ required: true })} placeholder="Date" />
+                                    {/* {errors.date && <span>City field is required</span>} */}
                                     <input type="submit" />
                                     <DialogActions>
-                                <Button onClick={handleClose} color="primary">
+                                    <Button onClick={handleClose} color="primary">
                                     Cancel
-                                </Button>
+                                     </Button>
                                 {/* <Button onClick={handleSubmit} color="primary">
                                     Send
                                  </Button> */}
                             </DialogActions>
                                 </form>
-
+                                
                             </DialogContent>
                             
                         </Dialog>

@@ -6,6 +6,7 @@
 }
 .shipping-form{
     margin: 30px 100px;
+    
    }
 .shipping-form input{
     display: block;
@@ -14,4 +15,8 @@
     border: 1px solid lightgray;
     border-radius: 5px;
     width: 100%;
+}
+.title{
+    color: #17D2B1;
+    text-align: center;
 }
