@@ -1,3 +1,19 @@
+# Doctors Portal
+
+### Short Descriptiom
+This application used for appoint doctors. Users can appoint doctors for their specific problems and in specific date in which doctors are available.
+And appointed doctors can confirm their appointments and confirm their patients in their specific time.
+
+### Technology
+1. React.js
+2. Node.js
+3. HTML
+4. Bootstrap
+5. CSS
+6. Firebase 
+7. MaterialUI
+8. MongoDB.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
